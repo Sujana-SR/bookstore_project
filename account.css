@@ -1,0 +1,146 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("image/bg_accnt.jpg");
+  /* border-image-repeat: stretch; */
+  font-family: "Arial";
+}
+font {
+  color: plum;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+.head2 ul {
+  display: inline-block;
+  list-style-type: none;
+}
+.head2 ul li {
+  margin-right: 20px;
+  background-color: #ffffff;
+  font-family: myriad pro;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  width: 105px;
+  height: 40px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  margin-top: -8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border-color: whitesmoke;
+}
+
+.login {
+  width: 320px;
+  margin: auto;
+  height: 290px;
+  margin-bottom: 80px;
+  margin: 20 -10 -5 450px;
+  padding: 80px;
+  background-color: rgba(36, 20, 5, 0.342);
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+label {
+  color: black;
+  font-size: 15px;
+  margin: 112px;
+}
+#Uname {
+  width: 300px;
+  height: 30px;
+  border: none;
+  justify-content: center;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+#Uname:hover {
+  border: 5px solid rgb(152, 152, 161);
+  background-color: White;
+}
+#Pass:hover {
+  border: 5px solid rgb(152, 152, 161);
+  background-color: White;
+}
+#Pass {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+#log {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  padding-right: 20px;
+  color: black;
+}
+#log1 {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 20px;
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: whitesmoke;
+  color: white;
+  margin-left: 90px;
+  width: 10px;
+  height: 15px;
+  border: none;
+}
+input[type="reset"] {
+  background-color: whitesmoke;
+  color: white;
+  margin-left: 90px;
+  width: 10px;
+  height: 15px;
+  padding: 10px 20px;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: lightcoral;
+  transition: all ease 0.5s;
+}
+input[type="reset"]:hover {
+  background-color: lightcoral;
+  transition: all ease 0.5s;
+}
+span {
+  color: white;
+  font-size: 17px;
+}
+.i1 {
+  float: right;
+  right: 20px;
+  color: blue;
+}
+.i1:hover {
+  color: red;
+  transition: 0.5s;
+}
+a:hover {
+  color: #2e0cec;
+}
