@@ -1,0 +1,112 @@
+profile.jsp
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css" />
+    <style>
+      <%@include file="profile.css"%>
+    </style>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="page-title">
+    <p>Welcome to profile !! ${name}</p>
+    <c:forEach var="produ" items="${products}">
+    </div>
+  </div>
+     <div class="container">
+        <div class="main">
+          <div class="left-column">
+            <img
+                    src="${produ.bookimg}"
+                    alt="Girl"
+                    width="300px"
+                    height="300px"
+            />
+          </div>
+          <div class="right-column">
+            <p>Book Name : ${produ.bookname}</p>
+            </br>
+
+            <p>Book Describtion : ${produ.bookdesc}</p>
+            </br>
+
+            <p>Book Price: ${produ.bookprize}</p>
+            </br>
+
+
+
+            <a href="addtocart" class="cart-btn">Add to cart</a>
+
+          </div>
+        </div>
+      </div>
+    </c:forEach>
+    </body>
+
+</html>
+
+
+profile.css
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+.parallax {
+  background-image: url("image/col2.jpg");
+  height: max-content;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title {
+  background: rgba(0, 0, 0 0.5);
+  text-align: center;
+  color: white;
+  padding: 73px;
+  font-variant: small-caps;
+  font-size: 100px;
+  font-family: fantasy;
+  letter-spacing: 20px;
+}
+.container {
+  box-shadow: 1px lightgrey;
+  height: 300px;
+  padding: 30px;
+  text-align: center;
+}
+.main {
+  display: flex;
+}
+
+.left-column {
+  width: 25%;
+  background-color: blanchedalmond;
+}
+
+.right-column {
+  background-color: beige;
+  width: 45%;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  background-color: rgb(8, 86, 231);
+}
