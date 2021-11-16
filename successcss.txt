@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="profile.css" />
+  <style>
+    <%@include file="profile.css"%>
+  </style>
+</head>
+<body>
+<div class="parallax">
+  <div class="page-title">
+    <p>Welcome to profile !! ${name}</p>
+    <c:forEach var="produ" items="${products}">
+  </div>
+</div>
+
+
+
+profile.css
+
+
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+.parallax {
+    background-image: url("image/col2.jpg");
+    height: max-content;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-title {
+    background: rgba(0, 0, 0 0.5);
+    text-align: center;
+    color: white;
+    padding: 73px;
+    font-variant: small-caps;
+    font-size: 100px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+}
